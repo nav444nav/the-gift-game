@@ -1,0 +1,21 @@
+# Git files
+.git
+.gitignore
+
+# Documentation (optional - remove if you want README on deployment)
+# README.md
+
+# Node modules (if added later)
+node_modules
+package-lock.json
+
+# IDE files
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db

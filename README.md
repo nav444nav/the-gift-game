@@ -109,11 +109,33 @@ netlify deploy --prod
 ```
 
 ### Option 3: Vercel (FREE with great performance)
+
+**Via Web Interface:**
 1. Sign up at [vercel.com](https://vercel.com)
 2. Import your GitHub repository
 3. Auto-deploy on every push
 4. Custom domains included
 5. Edge network for fast loading worldwide
+
+**Via Command Line (Quickest!):**
+```bash
+# Install Vercel CLI
+npm install -g vercel
+
+# Deploy (from project directory)
+vercel
+
+# Follow prompts:
+# - Link to existing project? No
+# - Project name: quicktools (or your choice)
+# - Directory: ./ (current directory)
+# - Auto-detected settings? Yes
+
+# Deploy to production
+vercel --prod
+```
+
+Your site will be live at: `https://yourproject.vercel.app`
 
 ### Option 4: Traditional Hosting ($15/year)
 Compatible with any static hosting:
@@ -150,6 +172,8 @@ quicktools/
 ├── pomodoro.js         # Pomodoro timer
 ├── poll.js             # Poll creator
 ├── santa.js            # Secret Santa generator
+├── vercel.json         # Vercel deployment config
+├── .vercelignore       # Files to exclude from Vercel
 └── README.md           # This file
 ```
 
@@ -268,10 +292,15 @@ For issues or suggestions, open a GitHub issue or contact [your-email].
 ```bash
 git clone https://github.com/yourusername/quicktools
 cd quicktools
-# Deploy to Netlify
+
+# Option 1: Deploy to Netlify
 netlify deploy --prod
 
-# Or just open index.html!
+# Option 2: Deploy to Vercel
+vercel --prod
+
+# Option 3: Just open locally!
+open index.html
 ```
 
 ---
