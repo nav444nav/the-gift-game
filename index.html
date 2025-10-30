@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickTools - Free Random & Utility Tools</title>
+    <meta name="description" content="Free online tools: wheel of names, random picker, team generator, countdown timer, color palettes, and more!">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🎯 QuickTools</h1>
+            <p class="tagline">All your random & utility tools in one place</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="tools-grid">
+            <!-- Wheel of Names -->
+            <div class="tool-card" data-tool="wheel">
+                <div class="tool-icon">🎡</div>
+                <h3>Wheel of Names</h3>
+                <p>Spin the wheel to pick a random name or option</p>
+                <button class="btn-primary" onclick="showTool('wheel')">Launch</button>
+            </div>
+
+            <!-- Random Decision Tools -->
+            <div class="tool-card" data-tool="random">
+                <div class="tool-icon">🎲</div>
+                <h3>Random Picker</h3>
+                <p>Coin flip, dice roll, yes/no, random number</p>
+                <button class="btn-primary" onclick="showTool('random')">Launch</button>
+            </div>
+
+            <!-- Team Generator -->
+            <div class="tool-card" data-tool="teams">
+                <div class="tool-icon">👥</div>
+                <h3>Team Generator</h3>
+                <p>Split names into random balanced teams</p>
+                <button class="btn-primary" onclick="showTool('teams')">Launch</button>
+            </div>
+
+            <!-- Countdown Timer -->
+            <div class="tool-card" data-tool="countdown">
+                <div class="tool-icon">⏰</div>
+                <h3>Countdown Timer</h3>
+                <p>Create countdown to any date or event</p>
+                <button class="btn-primary" onclick="showTool('countdown')">Launch</button>
+            </div>
+
+            <!-- Color Palette -->
+            <div class="tool-card" data-tool="colors">
+                <div class="tool-icon">🎨</div>
+                <h3>Color Palette</h3>
+                <p>Generate random color schemes instantly</p>
+                <button class="btn-primary" onclick="showTool('colors')">Launch</button>
+            </div>
+
+            <!-- Pomodoro Timer -->
+            <div class="tool-card" data-tool="pomodoro">
+                <div class="tool-icon">🍅</div>
+                <h3>Pomodoro Timer</h3>
+                <p>Focus timer for productivity</p>
+                <button class="btn-primary" onclick="showTool('pomodoro')">Launch</button>
+            </div>
+
+            <!-- Quick Poll -->
+            <div class="tool-card" data-tool="poll">
+                <div class="tool-icon">📊</div>
+                <h3>Quick Poll</h3>
+                <p>Create simple polls with shareable links</p>
+                <button class="btn-primary" onclick="showTool('poll')">Launch</button>
+            </div>
+
+            <!-- Secret Santa -->
+            <div class="tool-card" data-tool="santa">
+                <div class="tool-icon">🎅</div>
+                <h3>Secret Santa</h3>
+                <p>Random gift exchange generator</p>
+                <button class="btn-primary" onclick="showTool('santa')">Launch</button>
+            </div>
+        </div>
+
+        <!-- Ad Placeholder -->
+        <div class="ad-placeholder">
+            <p>📢 Ad Space - Help keep QuickTools free!</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 QuickTools | <a href="#" onclick="alert('Remove ads for $1.99!')">Remove Ads</a></p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="wheel.js"></script>
+    <script src="random.js"></script>
+    <script src="teams.js"></script>
+    <script src="countdown.js"></script>
+    <script src="colors.js"></script>
+    <script src="pomodoro.js"></script>
+    <script src="poll.js"></script>
+    <script src="santa.js"></script>
+</body>
+</html>
