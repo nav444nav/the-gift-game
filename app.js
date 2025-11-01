@@ -57,6 +57,9 @@ function loadToolPage(toolName) {
         case 'encode':
             toolPage.innerHTML = createEncodeTool();
             break;
+        case 'brochure':
+            toolPage.innerHTML = createBrochureTool();
+            break;
         case 'santa':
             toolPage.innerHTML = createSantaTool();
             break;
@@ -93,6 +96,9 @@ function initializeTool(toolName) {
             break;
         case 'encode':
             initEncode();
+            break;
+        case 'brochure':
+            initBrochure();
             break;
         case 'santa':
             initSanta();
