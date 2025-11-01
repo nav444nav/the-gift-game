@@ -54,6 +54,9 @@ function loadToolPage(toolName) {
         case 'poll':
             toolPage.innerHTML = createPollTool();
             break;
+        case 'encode':
+            toolPage.innerHTML = createEncodeTool();
+            break;
         case 'santa':
             toolPage.innerHTML = createSantaTool();
             break;
@@ -87,6 +90,9 @@ function initializeTool(toolName) {
             break;
         case 'poll':
             initPoll();
+            break;
+        case 'encode':
+            initEncode();
             break;
         case 'santa':
             initSanta();

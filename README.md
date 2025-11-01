@@ -1,6 +1,6 @@
 # 🎯 QuickTools - All-in-One Utility Toolkit
 
-A free, fast-loading web app with 8 useful tools in one place. Perfect for teachers, streamers, event organizers, and anyone who needs quick random decisions!
+A free, fast-loading web app with 9 useful tools in one place. Perfect for teachers, streamers, event organizers, developers, and anyone who needs quick random decisions!
 
 ## 🎨 Features
 
@@ -49,7 +49,18 @@ A free, fast-loading web app with 8 useful tools in one place. Perfect for teach
 - Vote and see results in real-time
 - Local storage (no database needed)
 
-### 8. **🎅 Secret Santa Generator**
+### 8. **🔐 Encode / Decode Tool**
+- **Base64** - Encode/decode for data transfer
+- **URL Encoding** - Encode/decode URLs and query strings
+- **HTML Entities** - Escape/unescape HTML special characters
+- **Hexadecimal** - Convert text to/from hex
+- **Binary** - Convert text to/from binary (0s and 1s)
+- **JWT Decoder** - Decode JWT tokens (view header/payload)
+- Copy output with one click
+- Swap input/output for chaining operations
+- Perfect for: Developers, data processing, debugging
+
+### 9. **🎅 Secret Santa Generator**
 - Randomly assign gift exchange partners
 - Ensures no one gets themselves
 - Click to reveal assignments
@@ -155,6 +166,7 @@ Compatible with any static hosting:
 - colors.js
 - pomodoro.js
 - poll.js
+- encode.js
 - santa.js
 
 ## 📁 Project Structure
@@ -171,6 +183,7 @@ quicktools/
 ├── colors.js           # Color palette generator
 ├── pomodoro.js         # Pomodoro timer
 ├── poll.js             # Poll creator
+├── encode.js           # Encode/decode tool
 ├── santa.js            # Secret Santa generator
 ├── vercel.json         # Vercel deployment config
 ├── .vercelignore       # Files to exclude from Vercel
